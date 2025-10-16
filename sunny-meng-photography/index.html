@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunny Meng Photography</title>
+  <meta name="description" content="Minimal, elegant photography portfolio with a two-column gallery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">SUNNY MENG<br/>PHOTOGRAPHY</div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="container">
+    <section id="gallery" class="gallery-section">
+      <h2 class="section-title">GALLERY</h2>
+      <div class="masonry">
+        <div class="col">
+          <img src="assets/photos/photo1.svg" alt="Portrait 1" />
+          <img src="assets/photos/photo2.svg" alt="Portrait 2" />
+          <img src="assets/photos/photo3.svg" alt="Portrait 3" />
+          <img src="assets/photos/photo4.svg" alt="Portrait 4" />
+        </div>
+        <div class="col">
+          <img src="assets/photos/photo5.svg" alt="Portrait 5" />
+          <img src="assets/photos/photo6.svg" alt="Portrait 6" />
+          <img src="assets/photos/photo7.svg" alt="Portrait 7" />
+          <img src="assets/photos/photo8.svg" alt="Portrait 8" />
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-row">
+      <div id="testimonials" class="cta-block">
+        <h3>TESTIMONIALS</h3>
+        <p>Real Client Reviews</p>
+        <a class="btn" href="#about">VIEW MORE</a>
+      </div>
+      <div id="services" class="cta-block">
+        <h3>SERVICES</h3>
+        <p>View Options</p>
+        <a class="btn" href="#contact">VIEW MORE</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="visually-hidden">About</h2>
+      <p>
+        Minimal, editorial-style portrait photography. Replace this paragraph with your bio.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="visually-hidden">Contact</h2>
+      <p>Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">yourhandle</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Sunny Meng Photography. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
