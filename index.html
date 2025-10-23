@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SUNNY MENG PHOTOGRAPHY</title>
   <style>
-    :root{
-      --bg:#eaeaea; --card:#ffffff; --text:#111; --muted:#444; --link:#111; --btn:#111;
-    }
+    :root{ --bg:#eaeaea; --card:#ffffff; --text:#111; --muted:#444; --link:#111; --btn:#111; }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0; background:var(--bg); color:var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";}
+    body{margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
     .page{max-width:980px; margin:0 auto; padding:12px}
-    .card{background:var(--card); min-height:100vh; padding:14px 14px 40px; box-shadow:0 0 0 1px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06)}
+    .card{background:var(--card); min-height:100vh; padding:14px 14px 40px;
+          box-shadow:0 0 0 1px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06)}
     .top{display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:8px; padding:8px 8px 0}
-    .navleft, .navright{display:flex; gap:18px; align-items:center; font-size:13px}
-    .brand{font-family: Georgia, "Times New Roman", serif; text-align:center; line-height:1.1}
+    .navleft,.navright{display:flex; gap:18px; align-items:center; font-size:13px}
+    .brand{font-family:Georgia,"Times New Roman",serif; text-align:center; line-height:1.1}
     .brand .up{letter-spacing:.12em; font-size:12px}
     .brand .down{letter-spacing:.08em; font-size:13px}
     a{color:var(--link); text-decoration:none}
     h2{margin:28px 0 12px; text-align:center; font-weight:500; letter-spacing:.08em; font-size:13px}
-    .gallery{display:grid; grid-template-columns: 1fr 1fr; gap:10px; padding:0 12px}
+    .gallery{display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:0 12px}
     .tile{position:relative; width:100%; background:#f3f3f3; overflow:hidden}
     .tile img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
     .ratio-3x2{padding-top:66.66%}
@@ -47,7 +47,7 @@
         <nav class="navleft">
           <a href="#">Sunny Meng</a>
           <a href="#">Home</a>
-          <a href="#">Gallery</a>
+          <a href="#gallery">Gallery</a>
         </nav>
         <div class="brand">
           <div class="up">SUNNY MENG</div>
@@ -60,29 +60,33 @@
         </nav>
       </div>
 
-      <h2>GALLERY</h2>
+      <h2 id="gallery">GALLERY</h2>
       <section class="gallery">
-      <div class="tile ratio-3x2"><img src="Photojpg/IMG_2419.JPG" alt="Photo 1"></div>
-      <div class="tile ratio-4x5"><img src="Photojpg/IMG_2730.jpeg" alt="Photo 2"></div>
-      <div class="tile ratio-4x5"><img src="Photojpg/IMG_3104.jpeg" alt="Photo 3"></div>
-      <div class="tile ratio-4x5"><img src="Photojpg/IMG_3378.jpeg" alt="Photo 4"></div>
-      <div class="tile ratio-3x2"><img src="Photojpg/IMG_3774.jpeg" alt="Photo 5"></div>
-      <div class="tile ratio-4x5"><img src="Photojpg/IMG_3783.jpeg" alt="Photo 6"></div>
-      <div class="tile ratio-4x5"><img src="Photojpg/IMG_3932.jpeg" alt="Photo 7"></div>
-      <div class="tile ratio-9x16"><img src="FC0161BF-912B-4307-9A4A-83597EAE1F44.JPG" alt="Photo 8"></div>
+        <div class="tile ratio-3x2"><img src="Photojpg/IMG_2419.JPG"   alt="Photo 1"></div>
+        <div class="tile ratio-4x5"><img src="Photojpg/IMG_2730.jpeg"  alt="Photo 2"></div>
+        <div class="tile ratio-4x5"><img src="Photojpg/IMG_3104.jpeg"  alt="Photo 3"></div>
+        <div class="tile ratio-4x5"><img src="Photojpg/IMG_3378.jpeg"  alt="Photo 4"></div>
+        <div class="tile ratio-3x2"><img src="Photojpg/IMG_3774.jpeg"  alt="Photo 5"></div>
+        <div class="tile ratio-4x5"><img src="Photojpg/IMG_3783.jpeg"  alt="Photo 6"></div>
+        <div class="tile ratio-4x5"><img src="Photojpg/IMG_3932.jpeg"  alt="Photo 7"></div>
+        <!-- FIXED: include the folder and exact filename (case-sensitive) -->
+        <div class="tile ratio-9x16"><img src="Photojpg/FC0161BF-912B-4307-9A4A-83597EAE1F44.JPG" alt="Photo 8"></div>
       </section>
 
-      <div class="bsec">
-      <div class="btitle">TESTIMONIALS</div>
-      <a class="blink" href="#">REAL CLIENTS. REAL STORIES.</a>
-      <div><a class="btn" href="testimonials.html">VIEW MORE</a></div>
-      </div>
+      <!-- FIXED: proper wrapper and balanced closing tags -->
+      <div class="bottom">
+        <div class="bsec">
+          <div class="btitle">TESTIMONIALS</div>
+          <a class="blink" href="#">REAL CLIENTS. REAL STORIES.</a>
+          <div><a class="btn" href="testimonials.html">VIEW MORE</a></div>
+        </div>
         <div class="bsec">
           <div class="btitle">SERVICES</div>
           <a class="blink" href="#">VIEW PACKAGES</a>
           <div><button class="btn">VIEW MORE</button></div>
         </div>
       </div>
+
     </div>
   </div>
 </body>
