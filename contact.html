@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services & Contact • SUNNY MENG PHOTOGRAPHY</title>
+  <style>
+    :root{ --bg:#eaeaea; --card:#ffffff; --text:#111; --muted:#555; }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial}
+    .page{max-width:980px;margin:0 auto;padding:12px}
+    .card{background:var(--card);min-height:100vh;padding:14px 14px 40px;
+          box-shadow:0 0 0 1px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.06)}
+    .top{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;padding:8px 8px 0}
+    .nav{display:flex;gap:18px;font-size:14px}
+    .brand{font-family:Georgia,"Times New Roman",serif;text-align:center;line-height:1.1}
+    .brand .up{letter-spacing:.12em;font-size:12px}
+    .brand .down{letter-spacing:.08em;font-size:13px}
+    a{color:inherit;text-decoration:none}
+    h1{margin:26px 0 6px;text-align:center;letter-spacing:.10em;font-weight:600;font-size:18px}
+    p.muted{text-align:center;color:var(--muted);margin:0 0 18px}
 
+    /* sections */
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width:820px){ .top{grid-template-columns:1fr} .nav{display:none} .brand{text-align:left} .grid{grid-template-columns:1fr} }
+
+    .section{border:1px solid #e6e6e6;border-radius:12px;padding:18px}
+    .stitle{letter-spacing:.12em;font-size:12px;margin-bottom:12px;text-align:center}
+    .cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:700px){ .cards{grid-template-columns:1fr} }
+    .cardy{border:1px solid #e6e6e6;border-radius:12px;padding:14px}
+    .cardy h3{margin:4px 0 4px;font-size:15px}
+    .price{font-weight:700;margin:6px 0}
+    .list{margin:8px 0 0;padding-left:18px;font-size:14px}
+    .btn{display:inline-block;margin-top:10px;padding:8px 14px;border:1.5px solid #111;border-radius:10px;background:#fff;color:#111;
+         letter-spacing:.06em;font-size:13px;cursor:pointer}
+    .contactBox{display:grid;gap:10px;justify-items:center;text-align:center}
+    .contactLine{font-size:15px}
+    .pill{display:inline-block;border:1px solid #ddd;padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <header class="top">
+        <nav class="nav">
+          <a href="index.html">← Home</a>
+          <a href="index.html#gallery">Gallery</a>
+          <a href="testimonials.html">Testimonials</a>
+        </nav>
+        <div class="brand">
+          <div class="up">SUNNY MENG</div>
+          <div class="down">PHOTOGRAPHY</div>
+        </div>
+        <div></div>
+      </header>
+
+      <h1>SERVICES & CONTACT</h1>
+      <p class="muted">Clean, minimal, and easy to book.</p>
+
+      <section class="grid">
+        <!-- SERVICES -->
+        <div class="section">
+          <div class="stitle">SERVICES</div>
+          <div class="cards">
+            <div class="cardy">
+              <h3>Portrait Session</h3>
+              <div class="price">$199</div>
+              <ul class="list">
+                <li>45–60 minutes on location</li>
+                <li>10 edited high-res photos</li>
+                <li>Online gallery download</li>
+              </ul>
+              <a class="btn" href="mailto:smphotography01927@gmail.com?subject=Portrait%20Session%20Inquiry">Book via Email</a>
+            </div>
+            <div class="cardy">
+              <h3>Family / Lifestyle</h3>
+              <div class="price">$299</div>
+              <ul class="list">
+                <li>90 minutes on location</li>
+                <li>20 edited high-res photos</li>
+                <li>Online gallery download</li>
+              </ul>
+              <a class="btn" href="mailto:smphotography01927@gmail.com?subject=Family%20Session%20Inquiry">Book via Email</a>
+            </div>
+          </div>
+          <div style="margin-top:12px;text-align:center">
+            <span class="pill">Custom packages available</span>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="section">
+          <div class="stitle">CONTACT</div>
+          <div class="contactBox">
+            <div class="contactLine">
+              Email: <a href="mailto:smphotography01927@gmail.com">smphotography01927@gmail.com</a>
+            </div>
+            <div class="contactLine">
+              Phone: <a href="tel:+12404827400">240-482-7400</a>
+            </div>
+            <a class="btn" href="mailto:smphotography01927@gmail.com?subject=Booking%20Inquiry&body=Hi%20Sunny,%0A%0AI%27d%20love%20to%20book%20a%20session.%20Here%20are%20some%20details:%0A%E2%80%A2%20Preferred%20date/time:%0A%E2%80%A2%20Location%20idea:%0A%E2%80%A2%20Type%20of%20session:%0A%0AThank%20you!">Start a Booking Email</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
