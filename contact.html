@@ -3,7 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services & Contact | SUNNY MENG PHOTOGRAPHY</title>
+
+  <!-- SEO Title & Description -->
+  <title>Services & Contact — Sunny Meng Photography | Maryland Portrait & Event Photographer</title>
+  <meta name="description" content="Contact Sunny Meng Photography for portraits, events, graduation, family, sports, and lifestyle shoots in Maryland (Rockville area). Fast replies via email.">
+
+  <!-- Canonical & Sitemap -->
+  <link rel="canonical" href="https://smphotography01927-art.github.io/sunny-meng-photography/contact.html">
+  <link rel="sitemap" type="application/xml" href="https://smphotography01927-art.github.io/sunny-meng-photography/sitemap.xml">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sunny Meng Photography">
+  <meta property="og:title" content="Services & Contact — Sunny Meng Photography">
+  <meta property="og:description" content="Book portraits, events, graduation, family, sports & lifestyle photography in Maryland.">
+  <meta property="og:url" content="https://smphotography01927-art.github.io/sunny-meng-photography/contact.html">
+  <meta property="og:image" content="https://smphotography01927-art.github.io/sunny-meng-photography/Photojpg/IMG_2419.JPG">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Services & Contact — Sunny Meng Photography">
+  <meta name="twitter:description" content="Reach Sunny Meng for portrait & event photography in Maryland (Rockville and nearby).">
+  <meta name="twitter:image" content="https://smphotography01927-art.github.io/sunny-meng-photography/Photojpg/IMG_2419.JPG">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "url": "https://smphotography01927-art.github.io/sunny-meng-photography/contact.html",
+    "about": {
+      "@type": "Person",
+      "name": "Sunny Meng",
+      "url": "https://smphotography01927-art.github.io/sunny-meng-photography/",
+      "jobTitle": "Photographer",
+      "areaServed": ["Maryland","Rockville"]
+    },
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "smphotography01927@gmail.com",
+      "telephone": "+1-240-482-7400",
+      "contactType": "customer service",
+      "areaServed": ["US-MD"],
+      "availableLanguage": ["English","Chinese"]
+    }]
+  }
+  </script>
+
   <style>
     :root {
       --bg:#eaeaea;
@@ -12,120 +58,41 @@
       --muted:#555;
       --border:#ddd;
     }
-
+    * { box-sizing:border-box; }
     body {
       margin:0;
       background:var(--bg);
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
       color:var(--text);
     }
-
-    .page {
-      max-width:980px;
-      margin:0 auto;
-      padding:20px;
-    }
-
+    .page { max-width:980px; margin:0 auto; padding:20px; }
     .card {
       background:var(--card);
       box-shadow:0 0 0 1px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
-      border-radius:12px;
-      padding:40px 20px;
+      border-radius:12px; padding:40px 20px;
     }
-
     header {
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      margin-bottom:30px;
-      font-size:15px;
+      display:flex; justify-content:space-between; align-items:center;
+      margin-bottom:30px; font-size:15px;
     }
-
-    header a {
-      color:var(--text);
-      text-decoration:none;
-      margin-right:18px;
-    }
-
-    h1 {
-      text-align:center;
-      letter-spacing:.08em;
-      font-size:16px;
-      margin-bottom:6px;
-    }
-
-    h2 {
-      text-align:center;
-      color:var(--muted);
-      font-weight:400;
-      font-size:14px;
-      margin-top:0;
-    }
-
-    .intro {
-      text-align:center;
-      max-width:720px;
-      margin:40px auto 20px;
-      font-size:15px;
-      line-height:1.7;
-      color:var(--muted);
-    }
-
-    .intro h3 {
-      font-size:16px;
-      font-weight:600;
-      color:var(--text);
-      margin-bottom:10px;
-      letter-spacing:.05em;
-    }
-
-    .content {
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:30px;
-      margin-top:40px;
-    }
-
-    .section {
-      border:1px solid var(--border);
-      border-radius:12px;
-      padding:20px;
-      text-align:center;
-    }
-
-    .section h3 {
-      font-size:13px;
-      letter-spacing:.1em;
-      margin-bottom:14px;
-    }
-
-    .info {
-      font-size:15px;
-      line-height:1.7;
-      margin-bottom:16px;
-    }
-
+    header a { color:var(--text); text-decoration:none; margin-right:18px; }
+    h1 { text-align:center; letter-spacing:.08em; font-size:16px; margin-bottom:6px; }
+    h2 { text-align:center; color:var(--muted); font-weight:400; font-size:14px; margin-top:0; }
+    .intro { text-align:center; max-width:720px; margin:40px auto 20px; font-size:15px; line-height:1.7; color:var(--muted); }
+    .intro h3 { font-size:16px; font-weight:600; color:var(--text); margin-bottom:10px; letter-spacing:.05em; }
+    .content { display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:40px; }
+    .section { border:1px solid var(--border); border-radius:12px; padding:20px; text-align:center; }
+    .section h3 { font-size:13px; letter-spacing:.1em; margin-bottom:14px; }
+    .info { font-size:15px; line-height:1.7; margin-bottom:16px; }
     .btn {
-      border:1px solid #111;
-      padding:8px 18px;
-      background:#fff;
-      color:#111;
-      border-radius:8px;
-      text-decoration:none;
-      font-size:14px;
-      letter-spacing:.05em;
-      cursor:pointer;
-      transition:all .2s ease;
+      border:1px solid #111; padding:8px 18px; background:#fff; color:#111;
+      border-radius:8px; text-decoration:none; font-size:14px; letter-spacing:.05em;
+      cursor:pointer; transition:all .2s ease; display:inline-block;
     }
-
-    .btn:hover {
-      background:#111;
-      color:#fff;
-    }
-
-    @media (max-width:700px){
-      .content { grid-template-columns:1fr; }
-    }
+    .btn:hover { background:#111; color:#fff; }
+    .links { margin-top:10px; font-size:14px; }
+    .links a { color:#111; }
+    @media (max-width:700px){ .content { grid-template-columns:1fr; } }
   </style>
 </head>
 
@@ -149,13 +116,10 @@
     <div class="intro">
       <h3>Hi, I’m Sunny — your photographer.</h3>
       <p>
-        I’m a student photographer passionate about capturing genuine moments and timeless stories. 
-        As a student photographer, I can experience a variety of shoots without the financial pressure. 
-        Therefore, my services are entirely free and easily accessible.
+        I’m a student photographer passionate about capturing genuine moments and timeless stories.
+        Because I’m still building experience, my services are currently free and accessible.
       </p>
-      <p>
-        I’m here to capture your golden era — one frame at a time.
-      </p>
+      <p>I’m here to capture your golden era — one frame at a time.</p>
     </div>
 
     <div class="card">
@@ -163,17 +127,21 @@
         <div class="section">
           <h3>SERVICES</h3>
           <p class="info">
-            For details about photo sessions, availability, or collaborations, please reach out directly. 
-            Every shoot is personalized based on your vision.
+            Portraits / Headshots · Events · Graduation · Family · Sports · Lifestyle/Fashion.<br>
+            For session details and availability, please reach out directly — every shoot is personalized.
           </p>
           <a class="btn" href="mailto:smphotography01927@gmail.com">Inquire via Email</a>
+          <div class="links">
+            or text/call: <a href="tel:+12404827400">240-482-7400</a>
+          </div>
         </div>
 
         <div class="section">
           <h3>CONTACT</h3>
           <p class="info">
-            Email: <b>smphotography01927@gmail.com</b><br>
-            Phone: <b>240-482-7400</b>
+            Email: <b><a href="mailto:smphotography01927@gmail.com">smphotography01927@gmail.com</a></b><br>
+            Phone: <b><a href="tel:+12404827400">240-482-7400</a></b><br>
+            Location: <b>Rockville, Maryland</b>
           </p>
           <a class="btn" href="mailto:smphotography01927@gmail.com?subject=Photography Inquiry">Start a Booking Email</a>
         </div>
